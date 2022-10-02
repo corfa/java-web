@@ -11,10 +11,12 @@ public class Post{
     private String text;
 
     private Date creationDate;
-    private Integer likes = 101;
+    private Integer likes = 0;
+    private Long id;
 
 
-    public Post(String text_post, Date CreateDate) {
+    public Post(Long id_,String text_post, Date CreateDate) {
+        id=id_;
         text=text_post;
         creationDate=CreateDate;
     }
