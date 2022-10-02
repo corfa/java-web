@@ -11,12 +11,11 @@ public class Post{
     private String text;
 
     private Date creationDate;
-    private Integer likes;
+    private Integer likes = 101;
 
 
-    public Post(String text_post,Integer likes_post,Date CreateDate) {
+    public Post(String text_post, Date CreateDate) {
         text=text_post;
-        likes=likes_post;
         creationDate=CreateDate;
     }
 }
